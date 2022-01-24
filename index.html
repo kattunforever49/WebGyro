@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | WebGLScreenOrientationDetect</title>
+    <title>Unity WebGL Player | ShootDart2021</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -17,11 +17,11 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
+      <!-- <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">WebGLScreenOrientationDetect</div>
-      </div>
+        <div id="unity-build-title">ShootDart2021</div>
+      </div> -->
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -56,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/UnityWebGLOrientationDetectSample-mainBuild.loader.js";
+      var loaderUrl = buildUrl + "/ShootDart2021Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/UnityWebGLOrientationDetectSample-mainBuild.data",
-        frameworkUrl: buildUrl + "/UnityWebGLOrientationDetectSample-mainBuild.framework.js",
-        codeUrl: buildUrl + "/UnityWebGLOrientationDetectSample-mainBuild.wasm",
+        dataUrl: buildUrl + "/ShootDart2021Build.data",
+        frameworkUrl: buildUrl + "/ShootDart2021Build.framework.js",
+        codeUrl: buildUrl + "/ShootDart2021Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "WebGLScreenOrientationDetect",
+        productName: "ShootDart2021",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };
@@ -88,8 +88,8 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-        canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
+        canvas.style.width = window.outerWidth + 'px';
+        canvas.style.height = window.outerHeight + 'px';
 
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
