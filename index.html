@@ -105,6 +105,9 @@
       // var myScreenOrientation = window.screen.orientation;
       // myScreenOrientation.lock("portrait");
       // console.log('test');
+      let de = document.documentElement;
+      de.requestFullscreen();
+      screen.orientation.lock("portrait-primary");
 
       var script = document.createElement("script");
       script.src = loaderUrl;
