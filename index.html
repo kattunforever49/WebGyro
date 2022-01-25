@@ -99,11 +99,12 @@
         canvas.style.height = "1080px";
       }
 
-      loadingBar.style.display = "block";
-      screen.orientation.lock("portrait");
-      var myScreenOrientation = window.screen.orientation;
-      myScreenOrientation.lock("portrait");
-      console.log('test');
+      // loadingBar.style.display = "block";
+      // screen.orientation.lock("portrait");
+      // var myScreenOrientation = window.screen.orientation;
+      // myScreenOrientation.lock("portrait");
+      // console.log('test');
+      screen.lockOrientation('portrait-primary');
 
       var script = document.createElement("script");
       script.src = loaderUrl;
