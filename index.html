@@ -101,6 +101,8 @@
 
       loadingBar.style.display = "block";
       screen.orientation.lock("portrait");
+      var myScreenOrientation = window.screen.orientation;
+      myScreenOrientation.lock("portrait");
 
       var script = document.createElement("script");
       script.src = loaderUrl;
